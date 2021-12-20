@@ -1,83 +1,78 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-export default function About(props) {
+export default function About() {
 
-  // const [myStyle, setmyStyle] = useState({
-  //   color:'black',
-  //   backgroundColor:'white'
-  // })
+  const [myStyle, setmyStyle] = useState({
+    color:'black',
+    backgroundColor:'white'
+  })
    
-  // const[btntext ,setBtnText]=useState("Enable dark mode")
+  const[btntext ,setBtnText]=useState("Enable dark mode")
+ 
 
-
-  // const toggleStyle = ()=>  {
-  //   if(myStyle.color === 'black'){
-  //     setmyStyle({
-  //       color:'white',
-  //       backgroundColor:'black', 
-  //       border: '1px solid white'
-  //     })
-  //     setBtnText("Enable Light Mode")
-  //   }
-  //   else{
-  //     setmyStyle({
-  //       color:'black',
-  //       backgroundColor:'white'
-  //     })
-  //     setBtnText("Enable Dark Mode")
-  //   }
-  // }
-
-    let myStyle={
-      color:props.mode === 'dark'?'white':'#042743',
-      backgroundColor:props.mode === 'dark'?'rgb(36 73 104)':'white',
+  const toggleStyle = ()=>  {
+    if(myStyle.color === 'black'){
+      setmyStyle({
+        color:'white',
+        backgroundColor:'black', 
+        border: '1px solid white'
+      })
+      setBtnText("Enable Light Mode")
     }
-
+    else{
+      setmyStyle({
+        color:'black',
+        backgroundColor:'white'
+      })
+      setBtnText("Enable Dark Mode")
+    }
+  }
   
   return (
-    <div className="container" >
-      <h1 className="container m-3" style={{color:props.mode === 'dark'?'white':'#042743'}}> About Us</h1>
-      <div className="accordion" id="accordionExample" style={myStyle}>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingOne">
-            <button className="accordion-button" type="button"  style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <strong> Analyze your text </strong>
+    <div className="container" style={myStyle}>
+      <h1 className="container m-3"> About Us</h1>
+      <div class="accordion" id="accordionExample" style={myStyle}>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button"  style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
             </button>
           </h2>
-          <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div className="accordion-body" style={myStyle}>
-              
-                  When you analyze a text, you give it meaning beyond what the text tells you directly. What is analysis? When you analyze a text, you ask questions about it so that <strong> you can offer an interpretation of the text</strong>.
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style={myStyle}>
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingTwo">
-            <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <strong> Free to use </strong>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
             </button>
           </h2>
-          <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div className="accordion-body" style={myStyle}>
-              <strong> Free definition is</strong>  - not costing or charging anything. How to use free in a sentence. Can Something Be 'For free?' Synonym Discussion of free.
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style={myStyle}>
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingThree">
-            <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <strong> Browser compatible </strong>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
             </button>
           </h2>
-          <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div className="accordion-body" style={myStyle}>
-            The term browser compatibility refers to the <strong>ability of a certain website to appear fully functional </strong> on different browsers that are available in the market. This means that the website's HTML coding, as well as the scripts on that website, should be compatible to run on the browsers.
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style={myStyle}>
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
       </div>
 
-      
+      <div className="container my-3">
+        <button onClick={toggleStyle} className="btn btn-primary"> {btntext}</button>
+      </div>
     </div>
   )
 }

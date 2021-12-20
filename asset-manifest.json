@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/TextUtills-FunctionBased-React/static/css/main.6b83a0ff.chunk.css",
+    "main.js": "/TextUtills-FunctionBased-React/static/js/main.d190ca30.chunk.js",
+    "main.js.map": "/TextUtills-FunctionBased-React/static/js/main.d190ca30.chunk.js.map",
+    "runtime-main.js": "/TextUtills-FunctionBased-React/static/js/runtime-main.d16ab3d8.js",
+    "runtime-main.js.map": "/TextUtills-FunctionBased-React/static/js/runtime-main.d16ab3d8.js.map",
+    "static/css/2.8757ddda.chunk.css": "/TextUtills-FunctionBased-React/static/css/2.8757ddda.chunk.css",
+    "static/js/2.28cf8b27.chunk.js": "/TextUtills-FunctionBased-React/static/js/2.28cf8b27.chunk.js",
+    "static/js/2.28cf8b27.chunk.js.map": "/TextUtills-FunctionBased-React/static/js/2.28cf8b27.chunk.js.map",
+    "static/js/3.ec2c1d3c.chunk.js": "/TextUtills-FunctionBased-React/static/js/3.ec2c1d3c.chunk.js",
+    "static/js/3.ec2c1d3c.chunk.js.map": "/TextUtills-FunctionBased-React/static/js/3.ec2c1d3c.chunk.js.map",
+    "index.html": "/TextUtills-FunctionBased-React/index.html",
+    "static/css/2.8757ddda.chunk.css.map": "/TextUtills-FunctionBased-React/static/css/2.8757ddda.chunk.css.map",
+    "static/css/main.6b83a0ff.chunk.css.map": "/TextUtills-FunctionBased-React/static/css/main.6b83a0ff.chunk.css.map",
+    "static/js/2.28cf8b27.chunk.js.LICENSE.txt": "/TextUtills-FunctionBased-React/static/js/2.28cf8b27.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d16ab3d8.js",
+    "static/css/2.8757ddda.chunk.css",
+    "static/js/2.28cf8b27.chunk.js",
+    "static/css/main.6b83a0ff.chunk.css",
+    "static/js/main.d190ca30.chunk.js"
+  ]
+}
